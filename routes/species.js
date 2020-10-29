@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const Species = require('../models/Species');
+const Species = require('../models/species');
 const Tree = require('../models/tree');
 
 /* GET trees listing. */
