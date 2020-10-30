@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var treesRouter = require('./routes/trees');
 var speciesRouter = require('./routes/species');
+var achievementsRouter = require('./routes/achievements');
 
 // database
 const mongoose = require('mongoose');
@@ -46,7 +47,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/trees', treesRouter);
-app.use('/species', speciesRouter); 
+app.use('/species', speciesRouter);
+app.use('/achievements', achievementsRouter); 
  
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
